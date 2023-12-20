@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>contact us</title>
+    <style>
+    form {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        width: 70%;
+        margin: auto;
+        
+    }
+    
+    label {
+        display: inline-block;
+        width: 50px;
+        margin: 10px 30px 10px 0px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        margin: 10px 0;
+        padding: 5px;
+        font-size: 1.2em;
+        width: 270px;
+    }
+    input:focus{
+
+      outline: 2px solid green;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin: 10px;
+    }
+    
+    input[type="submit"] {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 70px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #3E8E41;
+    }
+    .err{
+        color: red;
+        font-size: 14;
+        margin-left: 80px;
+    }
+    #nameError,#emptyname,#emailError,#emptyEmail,#paswordError,#emptyPassword,#emptyGender,
+    #sportsError,#emptyCountry{
+      display: none;   
+    }
+    </style>
+</head>
+<body>
+       <!-- nav bar section      ............................................................ -->
+       <div class="nav1">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="logo" class="nav-img"  width="140"
+                height="48">
+            </div> <!-- nav-logo -->
+            
+            <ul class="nav-items">
+                <li><a target="_blank" href="index.html">home</a></li><a href=""></a>
+                <li><a target="_blank" href="about.html">about</a></li>
+                <li><a target="_blank" href="contact.html">contact us</a></li>
+                
+            </ul>
+        
+
+        </div> <!-- nav-container -->
+        
+    </div>  <!-- nav -->
+    <!-- ///////////////////////////////////////////////////////////////////////// -->
+    <div class="formSection">
+
+        <div class="form-head-content">
+
+            <h2 class="form-title">Contact Us</h2>
+            <div class="form-line">
+
+            </div><!-- form-line -->
+
+        </div><!-- form-head-content -->
+	<form id="form">
+		<label for="name">Name:</label>
+		<input type="text" oninput="nameValidate()" id="name" name="name">
+        <p class="err" id="nameError" >enter a valid full-name</p>
+        <p class="err" id="emptyname" >you must enter this field</p>
+        <br>
+		<label for="email">Email:</label>
+		<input oninput="emailValidate()" type="text" id="email" name="email">
+        <p class="err" id="emailError" >please enter a valid email</p>
+        <p class="err" id="emptyEmail" >you must enter this field</p>
+        <br>
+		<label for="password">Password:</label>
+		<input oninput="passValidate()" type="password" id="password" name="password">
+        <p class="err" id="paswordError" >password characters must be greater than 8 char</p>
+        <p class="err" id="emptyPassword" >you must enter this field</p>
+        <br>
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+        <p class="err" id="emptyGender" >you must enter this field</p>
+        <br>
+        
+        <br>
+		<label for="country">Country:</label>
+		<select id="country" name="country">
+            <option disabled selected>Choose</option>
+			<option value="Canada">Canada</option>
+			<option value="UK">UK</option>
+			<option value="Australia">Australia</option>
+		</select>
+        <p class="err" id="emptyCountry" >you must enter this field</p>
+        <br>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+<!-- footer-section.................................................................................. -->
+        
+<div class="footer-section">
+    <div class="footer-center">
+        <div class="footer-image-container">
+            <img src="images/logo.png" alt="footer" class="footer-img">
+        </div>
+        <ul class="footer-ul">
+            <li class="footer-li">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            </li>
+            <li class="footer-li">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="footer-li">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="footer-li">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="footer-li">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+        <p class="fotter-para">
+            
+            copyright © 2021 . all right reserved by SMART-TECH
+
+        </p>
+
+    </div><!-- footer-center -->
+
+</div><!-- footer-section -->
+
+
+    <script>
+        var name1=document.getElementById("name")
+ var nameError=document.getElementById("nameError")
+ var emptyname=document.getElementById("emptyname")
+ var email=document.getElementById("email")
+ var emailError=document.getElementById("emailError")
+ var emptyEmail=document.getElementById("emptyEmail")
+ var password=document.getElementById("password")
+ var paswordError=document.getElementById("paswordError")
+ var emptyPassword=document.getElementById("emptyPassword")
+ var gender=document.getElementsByName("gender")
+ var emptyGender=document.getElementById("emptyGender")
+ var country=document.getElementById("country")
+ console.log(country)
+ var emptyCountry=document.getElementById("emptyCountry")
+var form=document.getElementById("form")
+form.addEventListener("submit",function(event){
+ event.preventDefault() 
+ if(name1.value==="")  
+ emptyname.style.display="block"
+ else
+ emptyname.style.display="none"
+ if(email.value==="")  
+ emptyEmail.style.display="block"
+ else
+ emptyEmail.style.display="none"
+ if(password.value==="")  
+ emptyPassword.style.display="block"
+ else
+ emptyPassword.style.display="none"
+ if(gender[0].checked===false &&gender[1].checked===false )  
+ emptyGender.style.display="block"
+ else
+ emptyGender.style.display="none"
+
+ if(country.selectedIndex  ===0)
+ emptyCountry.style.display="block"
+ else
+ emptyCountry.style.display="none"
+})
+ function passValidate()
+{
+    if(password.value.length<8)
+    paswordError.style.display="block"
+    else
+    paswordError.style.display="none"
+}
+function emailValidate(){
+    var emailReg= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(emailReg.test(email.value)==false )
+        emailError.style.display="block"
+    else
+        emailError.style.display="none"
+}
+function nameValidate(){
+    var nameReg= /^[A-Za-z]+(?:\s[A-Za-z]+)+$/;
+    if(nameReg.test(name1.value)===false )
+        nameError.style.display="block"
+
+    else  
+        nameError.style.display="none"
+}
+
+    </script>
+    
+</body>
+</html>

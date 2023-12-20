@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+     <!-- nav bar section      ............................................................ -->
+     <div class="nav1">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="logo" class="nav-img"  width="140"
+                height="48">
+            </div> <!-- nav-logo -->
+            <div class="cart" onclick="loading()">
+                <span id="cart_span">0</span>
+                <span class="cartIcon"><i class="fas fa-cart-plus"></i></span>
+            </div>
+            <ul class="nav-items">
+                <li><a target="_blank" href="index.html">home</a></li><a href=""></a>
+                <li><a target="_blank" href="about.html">about</a></li>
+                <li><a target="_blank" href="contact.html">contact us</a></li>
+                
+            </ul>
+        
+
+        </div> <!-- nav-container -->
+        
+    </div>  <!-- nav -->
+    <!-- slider section/////////////////////////////////////// -->
+    <div class="top-image" onmouseover="stopShow()" onmouseout="playShow()">
+        <img src="images/slider2.jpg" alt="dd" id="slide" width="100%">
+        <div class="sliderButtonContainer">
+            <button onclick="previousShow()" class="sliderButton">&lt;</button>
+            <button  onclick="nextShow()" class="sliderButton">&gt;</button>
+        </div>
+        <div class="sliderKalam">
+            <h1 class="top-image-title">
+                unlock your full potential
+            </h1>
+        </div>
+    </div><!--top-image  -->
+    <!-- advantage_section//////////////////////////////////////// -->
+    <!-- product-section//////////////////////////////////////////// -->
+   <div class="container">
+      <div class="product-section">
+          <ul class="nav nav-tabs">
+            <li class="nav-item" style="margin-left: 100px;font-weight: 700;font-size: 20px;">
+              <span class="nav-link active" data-toggle="tab"onclick="watches()">Watches</span>
+            </li>
+            <li class="nav-item" style="margin-left: 50px;font-weight: 700;font-size: 20px;">
+              <span class="nav-link" data-toggle="tab"  onclick="phones()">Phones</span>
+            </li>
+            <li class="nav-item" style="margin-left: 50px;font-weight: 700;font-size: 20px;">
+              <span class="nav-link" data-toggle="tab" onclick="laptops()">Laptops</span>
+            </li>
+            <li class="nav-item" style="margin-left: 50px;font-weight: 700;font-size: 20px;">
+              <span class="nav-link active" data-toggle="tab" onclick="kitchen()">Kitchen</span>
+            </li>
+            <li class="nav-item" style="margin-left: 50px;font-weight: 700;font-size: 20px;">
+              <span class="nav-link" data-toggle="tab"  onclick="furniture()">Furniture</span>
+            </li>
+            <li class="nav-item" style="margin-left: 50px;font-weight: 700;font-size: 20px;">
+              <span class="nav-link" data-toggle="tab" onclick="cook()">Cook Ware</span>
+            </li>
+          </ul>
+    
+          <div class="tab-content" id="tab-content">
+            <div id="watches" class="tab-pane fade show active">
+              <div class="content1">
+                <div class="card"  style="width: 20rem" >
+                    <img src="images/watch1.png" class="card-img" alt="" height="250px" style="padding:0 40px;background-color:#f6f6f6;">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                        <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                            <br>Only 1 left in stock - order soon</p>
+                        <div card-price>
+                            <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                            <span style="font-weight: 550;font-size: 20px;">$</span>
+                        </div>
+                        <br>
+                        <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                        <p class="added"> item is added successfully to cart</p>
+                    </div>
+                </div>
+
+
+                <div class="card"  style="width: 20rem" >
+                    <img src="images/watch2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                        <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                            <br>Only 1 left in stock - order soon</p>
+                        <div class="card-price">
+                            <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                            <span style="font-weight: 550;font-size: 20px;">$</span>
+                        </div>
+                        <br>
+                        <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                        <p class="added"> item is added successfully to cart</p>
+                    </div>
+                </div>
+
+
+                <div class="card"  style="width: 20rem" >
+                    <img src="images/watch3.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                        <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                            <br>Only 1 left in stock - order soon</p>
+                        <div class="card-price">
+                            <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                            <span style="font-weight: 550;font-size: 20px;">$</span>
+                        </div>
+                        <br>
+                        <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                        <p class="added"> item is added successfully to cart</p>
+                    </div>
+                </div>
+              </div>
+            
+             <div class="content2">
+                <div class="card"  style="width: 20rem" >
+                    <img src="images/watch4.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                        <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                            <br>Only 2 left in stock - order soon</p>
+                        <div class="card-price">
+                            <span  style="font-weight: 650;font-size: 25px;" >1000</span>
+                            <span style="font-weight: 550;font-size: 20px;">$</span>
+                        </div>
+                        <br>
+                        <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                        <p class="added"> item is added successfully to cart</p>
+                    </div>
+                </div>
+                <div class="card"  style="width: 20rem" >
+                    <img src="images/watch5.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title"style="font-weight: 650;">casio</h4>
+                        <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                            <br>Only 3 left in stock - order soon</p>
+                        <div class="card-price">
+                            <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                            <span style="font-weight: 550;font-size: 20px;">$</span>
+                        </div>
+                        <br>
+                        <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                        <p class="added"> item is added successfully to cart</p>
+                    </div>
+                </div>
+                <div class="card"  style="width: 20rem" >
+                    <img src="images/watch6.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                        <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                            <br>Only 4 left in stock - order soon</p>
+                        <div class="card-price">
+                            <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                            <span style="font-weight: 550;font-size: 20px;">$</span>
+                        </div>
+                        <br>
+                        <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                        <p class="added"> item is added successfully to cart</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+              <!-- Phones cards go here -->
+              <div id="phones" class="tab-pane fade show active">
+                <div class="content1">
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/phone1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+  
+  
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/phone1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+  
+  
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/phone1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                </div>
+              
+               <div class="content2">
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/phone1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 2 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >1000</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/phone1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">casio</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 3 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/phone1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 4 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            
+              <!-- Laptops cards go here -->
+              <div id="laptops" class="tab-pane fade show active">
+                <div class="content1">
+                  <div class="card"  style="width: 20rem;" >
+                      <img src="images/labtop1.png" class="card-img" alt="" height="250px" style="background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+  
+  
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/labtob2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+  
+  
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/labtop1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                </div>
+              
+               <div class="content2">
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/labtob2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 2 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >1000</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/labtop1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">casio</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 3 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/labtob2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 4 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+                <!-- newtab///////////////////////////// -->
+                <div id="kitchen" class="tab-pane fade show active">
+                  <div class="content1">
+                    <div class="card"  style="width: 20rem" >
+                        <img src="images/kitchen1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                            <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                <br>Only 1 left in stock - order soon</p>
+                            <div class="card-price">
+                                <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                <span style="font-weight: 550;font-size: 20px;">$</span>
+                            </div>
+                            <br>
+                            <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                            <p class="added"> item is added successfully to cart</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card"  style="width: 20rem" >
+                        <img src="images/kitchen2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                            <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                <br>Only 1 left in stock - order soon</p>
+                            <div class="card-price">
+                                <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                <span style="font-weight: 550;font-size: 20px;">$</span>
+                            </div>
+                            <br>
+                            <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                            <p class="added"> item is added successfully to cart</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card"  style="width: 20rem" >
+                        <img src="images/kitchen3.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                            <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                <br>Only 1 left in stock - order soon</p>
+                            <div class="card-price">
+                                <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                <span style="font-weight: 550;font-size: 20px;">$</span>
+                            </div>
+                            <br>
+                            <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                            <p class="added"> item is added successfully to cart</p>
+                        </div>
+                    </div>
+                  </div>
+                
+                 <div class="content2">
+                    <div class="card"  style="width: 20rem" >
+                        <img src="images/kitchen4.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                            <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                <br>Only 2 left in stock - order soon</p>
+                            <div class="card-price">
+                                <span  style="font-weight: 650;font-size: 25px;" >1000</span>
+                                <span style="font-weight: 550;font-size: 20px;">$</span>
+                            </div>
+                            <br>
+                            <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                            <p class="added"> item is added successfully to cart</p>
+                        </div>
+                    </div>
+                    <div class="card"  style="width: 20rem" >
+                        <img src="images/kitchen1.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title"style="font-weight: 650;">casio</h4>
+                            <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                <br>Only 3 left in stock - order soon</p>
+                            <div class="card-price">
+                                <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                <span style="font-weight: 550;font-size: 20px;">$</span>
+                            </div>
+                            <br>
+                            <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                            <p class="added"> item is added successfully to cart</p>
+                        </div>
+                    </div>
+                    <div class="card"  style="width: 20rem" >
+                        <img src="images/kitchen2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                            <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                <br>Only 4 left in stock - order soon</p>
+                            <div class="card-price">
+                                <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                <span style="font-weight: 550;font-size: 20px;">$</span>
+                            </div>
+                            <br>
+                            <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                            <p class="added"> item is added successfully to cart</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- new tab///////////////////////// -->
+                <div id="furniture" class="tab-pane fade show active">
+                    <div class="content1">
+                      <div class="card"  style="width: 20rem" >
+                          <img src="images/f2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                          <div class="card-body" style="text-align: center;">
+                              <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                              <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                  <br>Only 1 left in stock - order soon</p>
+                              <div class="card-price">
+                                  <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                  <span style="font-weight: 550;font-size: 20px;">$</span>
+                              </div>
+                              <br>
+                              <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                              <p class="added"> item is added successfully to cart</p>
+                          </div>
+                      </div>
+      
+      
+                      <div class="card"  style="width: 20rem" >
+                          <img src="images/f2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                          <div class="card-body" style="text-align: center;">
+                              <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                              <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                  <br>Only 1 left in stock - order soon</p>
+                              <div class="card-price">
+                                  <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                  <span style="font-weight: 550;font-size: 20px;">$</span>
+                              </div>
+                              <br>
+                              <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                              <p class="added"> item is added successfully to cart</p>
+                          </div>
+                      </div>
+      
+      
+                      <div class="card"  style="width: 20rem" >
+                          <img src="images/f2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                          <div class="card-body" style="text-align: center;">
+                              <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                              <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                  <br>Only 1 left in stock - order soon</p>
+                              <div class="card-price">
+                                  <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                  <span style="font-weight: 550;font-size: 20px;">$</span>
+                              </div>
+                              <br>
+                              <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                              <p class="added"> item is added successfully to cart</p>
+                          </div>
+                      </div>
+                    </div>
+                  
+                   <div class="content2">
+                      <div class="card"  style="width: 20rem" >
+                          <img src="images/f2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                          <div class="card-body" style="text-align: center;">
+                              <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                              <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                  <br>Only 2 left in stock - order soon</p>
+                              <div class="card-price">
+                                  <span  style="font-weight: 650;font-size: 25px;" >1000</span>
+                                  <span style="font-weight: 550;font-size: 20px;">$</span>
+                              </div>
+                              <br>
+                              <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                              <p class="added"> item is added successfully to cart</p>
+                          </div>
+                      </div>
+                      <div class="card"  style="width: 20rem" >
+                          <img src="images/f2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                          <div class="card-body" style="text-align: center;">
+                              <h4 class="card-title"style="font-weight: 650;">casio</h4>
+                              <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                  <br>Only 3 left in stock - order soon</p>
+                              <div class="card-price">
+                                  <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                  <span style="font-weight: 550;font-size: 20px;">$</span>
+                              </div>
+                              <br>
+                              <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                              <p class="added"> item is added successfully to cart</p>
+                          </div>
+                      </div>
+                      <div class="card"  style="width: 20rem" >
+                          <img src="images/f2.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                          <div class="card-body" style="text-align: center;">
+                              <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                              <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                                  <br>Only 4 left in stock - order soon</p>
+                              <div class="card-price">
+                                  <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                                  <span style="font-weight: 550;font-size: 20px;">$</span>
+                              </div>
+                              <br>
+                              <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                              <p class="added"> item is added successfully to cart</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                    <!-- new tab/////////////////////////// -->
+                     <!-- Phones cards go here -->
+            <div id="cook" class="tab-pane fade show active">
+                <div class="content1">
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/c.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+  
+  
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/c.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+  
+  
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/c.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 1 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                </div>
+              
+               <div class="content2">
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/c.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 2 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >1000</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/c.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">casio</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 3 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                  <div class="card"  style="width: 20rem" >
+                      <img src="images/c.png" class="card-img" alt="" height="250px" style="padding:0 30px;background-color:#f6f6f6;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4 class="card-title"style="font-weight: 650;">Timex</h4>
+                          <p class="card-text"><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star" style="color:#F5961D;font-size: 15px;"></i><i class="fas fa-star-half-alt"style="color:#F5961D;font-size:15px"></i>
+                              <br>Only 4 left in stock - order soon</p>
+                          <div class="card-price">
+                              <span  style="font-weight: 650;font-size: 25px;" >5.525</span>
+                              <span style="font-weight: 550;font-size: 20px;">$</span>
+                          </div>
+                          <br>
+                          <div class="btn btn-success" style="margin-bottom: 15px;">add to cart</div>
+                          <p class="added"> item is added successfully to cart</p>
+                      </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    
+    </div>
+    </div>
+
+    <div class="small-section">
+        <button class="back-to-top" onclick="scrollToTop()">&#8679;</button>
+    </div>
+    <!-- footer section////////////////////////////////////////////// -->
+         <!-- footer-section.................................................................................. -->
+        
+         <div class="footer-section">
+            <div class="footer-center">
+                <div class="footer-image-container">
+                    <img src="images/logo.png" alt="footer" class="footer-img">
+                </div>
+                <ul class="footer-ul">
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <p class="fotter-para">
+                    
+                    copyright © 2021 . all right reserved by SMART-TECH
+
+                </p>
+
+            </div><!-- footer-center -->
+
+        </div><!-- footer-section -->
+        <div id="test2"></div>
+<script src="java/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="java/bootstrap.js"></script>   
+<script src="java/java.js"></script>
+</body>
+</html>

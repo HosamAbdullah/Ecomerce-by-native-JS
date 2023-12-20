@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+</head>
+<body style="background-color: #eaeded;">
+    <!-- nav bar section      ............................................................ -->
+    <div class="nav1">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="logo" class="nav-img"  width="140"
+                height="48">
+            </div> <!-- nav-logo -->
+            <div class="cart" onclick="loading()">
+                <span id="cart_span">0</span>
+                <span class="cartIcon"><i class="fas fa-cart-plus"></i></span>
+            </div>
+            <ul class="nav-items">
+                <li><a target="_blank" href="index.html">home</a></li><a href=""></a>
+                <li><a target="_blank" href="about.html">about</a></li>
+                <li><a target="_blank" href="contact.html">contact us</a></li>
+                
+            </ul>
+          
+
+        </div> <!-- nav-container -->
+        
+    </div>  <!-- nav -->
+
+
+        <div class="containerFromCartPahe">
+            <div id="cont">
+                <div id="emptyCart">
+                        <img  class="emptyCartfromCartPage" src="images/empty cart.png" alt="">
+                        <h1 class="emptyCartTitlefromCartPage">Your Cart Is Empty</h1>
+                </div>
+            </div>
+        </div>
+
+
+     <!-- footer section////////////////////////////////////////////// -->
+         <!-- footer-section.................................................................................. -->
+        
+         <div class="footer-section">
+            <div class="footer-center">
+                <div class="footer-image-container">
+                    <img src="images/logo.png" alt="footer" class="footer-img">
+                </div>
+                <ul class="footer-ul">
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <p class="fotter-para">
+                    
+                    copyright © 2021 . all right reserved by SMART-TECH
+
+                </p>
+
+            </div><!-- footer-center -->
+
+        </div><!-- footer-section -->
+
+
+<script>
+     //////////////////////////////////////////////////
+  function setCookie(name,value,numOfmonthsToExpire)
+  {
+      var dateToExipire= new Date()
+      var noOfMonths=dateToExipire.getMonth()+numOfmonthsToExpire
+      dateToExipire.setMonth(noOfMonths)
+      document.cookie=name+"="+value+";expires="+dateToExipire+";"
+  }
+  function getAllCookies()
+      {
+          var objectedCookie={}
+          var cookieArray=document.cookie.split("; ")
+          for(var i=0;i<cookieArray.length;i++)
+          {
+              var cookie =cookieArray[i].split("=")
+  
+              objectedCookie[cookie[0]]=cookie[1]
+          }
+          return objectedCookie
+      }
+  function deleteCookie(cookiname)
+  {
+      setCookie(cookiname,null,-10)
+  }
+  
+  function getcooki(cookiName)
+  {
+      return getAllCookies()[cookiName]
+  }
+  ///////////////////////////////////////////////
+    var cart_span=document.getElementById("cart_span")
+    cart_span.innerText=""
+    cart_span.append(getcooki("count"))
+    var message;
+    function loadcart(){
+       message = sessionStorage.getItem('message');
+      var para=document.getElementById("cont")
+     para.innerHTML=message
+    }
+    window.onload=function(){
+        if (Number(getcooki("count"))>0){
+            document.getElementById("emptyCart").style.display="none"
+            loadcart()
+        }
+            
+        else
+        document.getElementById("emptyCart").style.display="block"
+
+    }
+   
+
+</script>
+
+
+ 
+</body>
+</html>
